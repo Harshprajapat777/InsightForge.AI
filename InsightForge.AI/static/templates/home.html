@@ -16,7 +16,13 @@
     <div class="header-inner">
       <div class="brand">
         <div class="logo-wrap">
-          <img src="/logo/InsightAI.jpg" alt="InsightForge.AI Logo" class="logo-img" />
+          <img
+            src="/logo/InsightAI.jpg"
+            alt="InsightForge.AI Logo"
+            class="logo-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <span class="logo-fallback" style="display:none;">IF</span>
         </div>
         <div class="brand-text">
           <h1 class="brand-name">InsightForge<span class="accent">.AI</span></h1>
@@ -74,28 +80,30 @@
         <p class="welcome-sub">I can find exact figures, compare regional data, and calculate projections — all with verifiable citations.</p>
       </div>
 
-      <!-- Messages -->
-      <div class="messages" id="messages"></div>
+      <!-- Messages (scrollable) -->
+      <div class="messages" id="messages" style="display:none;"></div>
 
-      <!-- Input -->
+      <!-- Input — centered with same max-width as messages -->
       <div class="input-bar">
-        <div class="input-wrap">
-          <textarea
-            id="queryInput"
-            class="query-input"
-            placeholder="Ask a question about the Cyber Ireland 2022 Report..."
-            rows="1"
-            onkeydown="handleKey(event)"
-            oninput="autoResize(this)"
-          ></textarea>
-          <button class="send-btn" id="sendBtn" onclick="sendQuery()" title="Send (Enter)">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="22" y1="2" x2="11" y2="13"></line>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-            </svg>
-          </button>
+        <div class="input-bar-inner">
+          <div class="input-wrap">
+            <textarea
+              id="queryInput"
+              class="query-input"
+              placeholder="Ask a question about the Cyber Ireland 2022 Report..."
+              rows="1"
+              onkeydown="handleKey(event)"
+              oninput="autoResize(this)"
+            ></textarea>
+            <button class="send-btn" id="sendBtn" onclick="sendQuery()" title="Send (Enter)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+          <p class="input-hint">Press <kbd>Enter</kbd> to send &nbsp;&middot;&nbsp; <kbd>Shift+Enter</kbd> for new line</p>
         </div>
-        <p class="input-hint">Press <kbd>Enter</kbd> to send &nbsp;&middot;&nbsp; <kbd>Shift+Enter</kbd> for new line</p>
       </div>
 
     </main>
