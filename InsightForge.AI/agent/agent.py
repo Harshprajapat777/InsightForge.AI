@@ -221,14 +221,15 @@ def run_query(query: str, agent: ReActAgent = None) -> dict:
 
     timestamp = datetime.now(timezone.utc).isoformat()
 
+    response = None
     try:
         response = agent.chat(query)
         answer   = str(response)
     except Exception as e:
         answer = f"ERROR: Agent failed — {e}"
 
-    # Pull step-level traces from agent's internal task list
-    agent_steps = _extract_steps_from_agent(agent)
+    # Pull step-level traces from response.sources (reliable in LlamaIndex 0.10.x)
+    agent_steps = _extract_steps_from_response(response)
 
     citations  = extract_citations(answer)
     tools_used = extract_tools_used(agent_steps)
@@ -253,28 +254,33 @@ def run_query(query: str, agent: ReActAgent = None) -> dict:
     return trace
 
 
-def _extract_steps_from_agent(agent: ReActAgent) -> list[dict]:
+def _extract_steps_from_response(response) -> list[dict]:
     """
-    Extract Thought/Action/Observation steps from the agent's
-    completed task sources. Works with LlamaIndex 0.10.x ReActAgent.
+    Extract tool call steps from AgentChatResponse.sources.
+    This is the correct LlamaIndex 0.10.x API — response.sources is a
+    List[ToolOutput] containing every tool call made during the query.
+
+    ToolOutput fields used:
+      .tool_name  - name of the tool called
+      .raw_input  - dict {"input": <query string>}
+      .content    - string result returned by the tool
     """
     steps = []
+    if response is None:
+        return steps
     try:
-        # ReActAgent stores completed tasks in _task_dict (internal)
-        for task_id, task in agent._task_dict.items():
-            for step_output in task.completed_steps:
-                output = step_output.output
-                if hasattr(output, "sources"):
-                    for src in output.sources:
-                        steps.append({
-                            "thought":      getattr(src, "thought", ""),
-                            "action":       getattr(src, "tool_name", ""),
-                            "action_input": str(getattr(src, "tool_input", "")),
-                            "observation":  str(getattr(src, "content", ""))[:600],
-                        })
-    except Exception:
-        # Fallback: return empty — answer is still correct, just no step detail
-        pass
+        sources = getattr(response, "sources", []) or []
+        for src in sources:
+            raw        = getattr(src, "raw_input", {}) or {}
+            tool_input = str(raw.get("input", ""))
+            steps.append({
+                "thought":      "",                          # not in ToolOutput; visible in server terminal
+                "action":       str(getattr(src, "tool_name", "")),
+                "action_input": tool_input,
+                "observation":  str(getattr(src, "content", ""))[:600],
+            })
+    except Exception as e:
+        print(f"[trace] step extraction warning: {e}")
     return steps
 
 

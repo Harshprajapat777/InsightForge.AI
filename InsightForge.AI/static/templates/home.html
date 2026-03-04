@@ -30,10 +30,16 @@
         </div>
       </div>
       <div class="header-right">
-        <div class="status-pill">
-          <span class="status-dot"></span>
-          <span>Agent Live</span>
+        <div class="status-pill" id="statusPill">
+          <span class="status-dot" id="statusDot"></span>
+          <span id="statusLabel">Connecting...</span>
         </div>
+        <button class="new-chat-btn" id="newChatBtn" onclick="clearChat()" style="display:none;" title="New conversation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          New Chat
+        </button>
         <a href="/docs" target="_blank" class="docs-link">API Docs</a>
       </div>
     </div>
@@ -46,17 +52,17 @@
     <aside class="sidebar">
       <p class="sidebar-label">Suggested Queries</p>
 
-      <button class="chip" onclick="setQuery('What is the total number of jobs reported, and where exactly is this stated?')">
+      <button class="chip" onclick="sendDirect('What is the total number of jobs reported, and where exactly is this stated?')">
         <span class="chip-icon">&#128203;</span>
         Total jobs reported &amp; source citation
       </button>
 
-      <button class="chip" onclick="setQuery('Compare the concentration of Pure-Play cybersecurity firms in the South-West against the National Average.')">
+      <button class="chip" onclick="sendDirect('Compare the concentration of Pure-Play cybersecurity firms in the South-West against the National Average.')">
         <span class="chip-icon">&#128202;</span>
         Pure-Play: South-West vs National Average
       </button>
 
-      <button class="chip" onclick="setQuery('Based on our 2022 baseline and the stated 2030 job target, what is the required compound annual growth rate (CAGR) to hit that goal?')">
+      <button class="chip" onclick="sendDirect('Based on our 2022 baseline and the stated 2030 job target, what is the required compound annual growth rate (CAGR) to hit that goal?')">
         <span class="chip-icon">&#128200;</span>
         CAGR to reach 2030 job target
       </button>

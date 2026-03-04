@@ -27,6 +27,5 @@ build/
 .DS_Store
 Thumbs.db
 
-# Logs
+# Logs — keep logs/ dir and traces.json (required assignment deliverable)
 *.log
-logs/

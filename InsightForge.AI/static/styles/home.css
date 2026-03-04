@@ -113,6 +113,18 @@ body {
   50%      { opacity:0.35; }
 }
 
+.new-chat-btn {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.72rem; font-weight: 500;
+  color: var(--text-dim);
+  background: transparent;
+  padding: 5px 12px;
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  cursor: pointer; font-family: var(--font);
+  transition: all 0.2s;
+}
+.new-chat-btn:hover { color: var(--cyan); border-color: var(--cyan); }
+
 .docs-link {
   font-size: 0.72rem; font-weight: 500;
   color: var(--text-muted); text-decoration: none;

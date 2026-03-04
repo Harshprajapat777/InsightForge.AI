@@ -13,7 +13,45 @@ const sendBtn    = document.getElementById('sendBtn');
 
 let isLoading = false;
 
-// ── Sidebar quick-query ─────────────────────────────────────────
+// ── Health check — verify backend is up on page load ────────────
+async function checkHealth() {
+  const pill  = document.getElementById('statusPill');
+  const dot   = document.getElementById('statusDot');
+  const label = document.getElementById('statusLabel');
+  try {
+    const res = await fetch('/health');
+    if (res.ok) {
+      label.textContent = 'Agent Live';
+    } else {
+      throw new Error();
+    }
+  } catch {
+    if (pill)  { pill.style.background = 'rgba(239,68,68,0.1)'; pill.style.borderColor = 'rgba(239,68,68,0.25)'; pill.style.color = 'var(--red)'; }
+    if (dot)   { dot.style.background = 'var(--red)'; }
+    if (label) { label.textContent = 'Agent Offline'; }
+  }
+}
+checkHealth();
+
+// ── Clear chat — reset to welcome state ─────────────────────────
+function clearChat() {
+  messagesEl.innerHTML = '';
+  messagesEl.style.display = 'none';
+  if (welcomeEl) welcomeEl.style.display = 'flex';
+  document.getElementById('newChatBtn').style.display = 'none';
+  inputEl.value = '';
+  inputEl.style.height = 'auto';
+  inputEl.focus();
+}
+
+// ── Sidebar chip — set query AND auto-send ──────────────────────
+function sendDirect(text) {
+  if (isLoading) return;
+  inputEl.value = text;
+  sendQuery();
+}
+
+// ── Sidebar quick-query (fill only, no auto-send) ────────────────
 function setQuery(text) {
   inputEl.value = text;
   autoResize(inputEl);
@@ -38,6 +76,8 @@ function handleKey(e) {
 function showMessages() {
   if (welcomeEl) welcomeEl.style.display = 'none';
   messagesEl.style.display = 'flex';
+  const btn = document.getElementById('newChatBtn');
+  if (btn) btn.style.display = 'flex';
 }
 
 // ── Scroll chat to bottom ───────────────────────────────────────
