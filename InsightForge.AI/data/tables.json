@@ -17,15 +17,15 @@
       ],
       [
         "Threat intelligence, monitoring, detection, and analysis",
-        "Іnformation security professional services that focus on network administration or network engineering or identification of harmful activities, that help to counter the activities of cybercriminals such as hackers and developers of malicious software."
+        "Information security professional services that focus on network administration or network engineering or identification of harmful activities, that help to counter the activities of cybercriminals such as hackers and developers of malicious software."
       ],
       [
         "Managed security service provision (MSSP) and advisory services",
-        "Firms that typically sell cyber security services to an external party and are primarily focused on outsourced cyber security. For example, where a business procures an MSSP to undertake cyber security monitoring, network security, patching and remote device management, penetration testing, and broader security and ІT advice."
+        "Firms that typically sell cyber security services to an external party and are primarily focused on outsourced cyber security. For example, where a business procures an MSSP to undertake cyber security monitoring, network security, patching and remote device management, penetration testing, and broader security and IT advice."
       ],
       [
         "Risk, compliance, and fraud",
-        "Firms where the focus of cyber security techniques is upon identifying risk (such as harmful actors or anomalies), ensuring compliance with cyber security standards (e.g., ІSO27001 and GDPR) concerning data management, and identifying and mitigating fraud within transactions. There is a strong overlap between this field with FinTech and payment processing."
+        "Firms where the focus of cyber security techniques is upon identifying risk (such as harmful actors or anomalies), ensuring compliance with cyber security standards (e.g., ISO27001 and GDPR) concerning data management, and identifying and mitigating fraud within transactions. There is a strong overlap between this field with FinTech and payment processing."
       ],
       [
         "Other firms",
@@ -61,7 +61,7 @@
   },
   {
     "page": 13,
-    "title": "FIGURE 3.2 NUMBER OF FIRMS BY DEDICATED / DIVERSIFIED STATUS",
+    "title": "3.2 NUMBER OF FIRMS BY DEDICATED / DIVERSIFIED STATUS",
     "headers": [
       "DEDICATED",
       "33%"
@@ -75,7 +75,7 @@
   },
   {
     "page": 13,
-    "title": "FIGURE 3.3 NUMBER OF FIRMS BY DEDICATED / DIVERSIFIED STATUS AND BY SIZE",
+    "title": "3.3 NUMBER OF FIRMS BY DEDICATED / DIVERSIFIED STATUS AND BY SIZE",
     "headers": [
       "FIRMS",
       "100%",
@@ -95,31 +95,30 @@
       [
         "80%",
         "40%",
-        "£46M"
+        "£46M",
+        "70%",
+        "BY"
       ],
       [
-        "70%",
-        "BY",
+        "60%",
         "67%",
         "60%",
-        "61%"
-      ],
-      [
-        "60%",
-        "50%",
-        "60%",
-        "39%"
+        "61%",
+        "FIRMS"
       ],
       [
         "50%",
         "60%",
         "39%",
-        "OF",
-        "60%",
-        "39%"
+        "OF"
       ],
       [
         "40%",
+        "40%",
+        "39%",
+        "NO."
+      ],
+      [
         "30%",
         "33%",
         "40%",
@@ -131,7 +130,10 @@
         "11%",
         "9",
         "8",
-        "8"
+        "8",
+        "6",
+        "5",
+        "21"
       ],
       [
         "10%",
@@ -139,10 +141,16 @@
         "2%",
         "2%",
         "2%",
-        "1%"
+        "1%",
+        "1%",
+        "4%"
       ],
       [
         "0%",
+        "DEDICATED",
+        "DIVERSIFIED",
+        "DEDICATED",
+        "DIVERSIFIED",
         "DEDICATED",
         "DIVERSIFIED",
         "DEDICATED",
@@ -152,27 +160,22 @@
   },
   {
     "page": 13,
-    "title": "FIGURE 3.4 NUMBER OF FIRMS BY HEADQUARTERED COUNTRY",
+    "title": "3.4 NUMBER OF FIRMS BY HEADQUARTERED COUNTRY",
     "headers": [
       "COUNTRY",
-      "NO.",
-      "PERCENTAGE"
+      "NO."
     ],
     "rows": [
       [
-        "ROI",
-        "139",
-        "28%"
+        "ROI"
       ],
       [
         "US",
-        "53",
-        "11%"
+        "139"
       ],
       [
         "UK",
-        "30",
-        "6%"
+        "53"
       ],
       [
         "FRANCE"
@@ -190,7 +193,8 @@
         "CANADA"
       ],
       [
-        "OTHER"
+        "OTHER",
+        "30"
       ]
     ]
   },
@@ -257,27 +261,25 @@
     "rows": [
       [
         "174",
-        "151",
-        "138",
         "100",
         "60%",
         "39%",
-        "92"
-      ],
-      [
-        "36%",
-        "28%",
-        "27%",
         "40%",
         "64",
-        "56",
-        "19%"
+        "56"
       ],
       [
-        "15 (11%)",
-        "122 (89%)",
-        "137",
-        "50",
+        "151",
+        "£51M",
+        "36%",
+        "138",
+        "129",
+        "28%",
+        "27%"
+      ],
+      [
+        "92",
+        "0",
         "13%",
         "11%"
       ]
@@ -285,7 +287,7 @@
   },
   {
     "page": 15,
-    "title": "For example, Cork has the highest concentration of cyber security multinationals and is home to the top five cyber security employers in Ireland.",
+    "title": "For example, Cork has the highest concentration of cyber security multinationals and is home to the top five cyber security employers in Іreland.",
     "headers": [
       "LETTERKENNY",
       "DUNDALK"
@@ -296,15 +298,11 @@
         "Dundalk Institute of Technology"
       ],
       [
-        "SLIGO"
-      ],
-      [
-        "Institute of Technology Sligo"
-      ],
-      [
+        "SLIGO",
         "ATHLONE"
       ],
       [
+        "Institute of Technology Sligo",
         "Technological University of the Shannon"
       ]
     ]
@@ -563,49 +561,11 @@
   },
   {
     "page": 20,
-    "title": "TABLE 4.5 CYBER SECURITY SECTORAL COMPARISON (WHERE DATA IS AVAILABLE / COMPARABLE)",
-    "headers": [
-      "REGION",
-      "NO. OF FIRMS (PER 100,000 NATIONAL POPULATION)",
-      "NUMBER OF EMPLOYEES",
-      "SECTOR GVA",
-      "SECTOR REVENUE",
-      "AVERAGE SALARY"
-    ],
-    "rows": [
-      [
-        "Ireland",
-        "489 (9.7)¹²",
-        "7,351",
-        "€2.1bn",
-        "€1.1bn",
-        "€75k"
-      ],
-      [
-        "Northern Ireland ¹³",
-        "104 (6)¹⁴",
-        "2,299",
-        "Not Estimated",
-        "£161m (€190m)",
-        "£48k (€55k)"
-      ],
-      [
-        "UK ¹⁵",
-        "1,838 (2.7)¹⁶",
-        "52,727",
-        "£10.1bn (€11.9bn)",
-        "£5.3bn (€6.3bn)",
-        "£60k (€70k)¹⁷"
-      ]
-    ]
-  },
-  {
-    "page": 20,
     "title": "TABLE 4.4 GVA AND REVENUE ESTIMATE (2021)",
     "headers": [
       "TYPE OF FIRM",
-      "AVERAGE SALARY PER EMPLOYEE",
-      "ESTIMATED GVA",
+      "AVERAGE SALARY",
+      "ESTIMATED GVA PER EMPLOYEE",
       "ESTIMATED NUMBER OF EMPLOYEES",
       "TOTAL GVA"
     ],
@@ -627,6 +587,44 @@
     ]
   },
   {
+    "page": 20,
+    "title": "TABLE 4.5 CYBER SECURITY SECTORAL COMPARISON (WHERE DATA IS AVAILABLE / COMPARABLE)",
+    "headers": [
+      "REGION",
+      "NO. OF FIRMS (PER 100,000 POPULATION)",
+      "NUMBER OF EMPLOYEES SECTOR",
+      "SECTOR GVA",
+      "AVERAGE REVENUE",
+      "AVERAGE SALARY"
+    ],
+    "rows": [
+      [
+        "Ireland",
+        "489 (9.7)¹²",
+        "7,351",
+        "€2.1bn",
+        "€1.1bn",
+        "€75k"
+      ],
+      [
+        "Northern Ireland¹³",
+        "104 (6)¹⁴",
+        "2,299",
+        "Not Estimated",
+        "£161m (€190m)",
+        "£48k (€55k)"
+      ],
+      [
+        "UK¹⁵",
+        "1,838 (2.7)¹⁶",
+        "52,727",
+        "£10.1bn (€11.9bn)",
+        "£5.3bn (€6.3bn)",
+        "£60k (€70k)¹⁷"
+      ]
+    ]
+  },
+  {
     "page": 21,
     "title": "TABLE 4.6 BENCHMARK COMPARISON",
     "headers": [
@@ -642,31 +640,42 @@
         "The UK is well placed to support cyber security start-ups through a range of government, industry and academic support services. These include initiatives to support early-stage ideas and start-ups (e.g., HutZero, Cyber 101, CyberASAP). The UK’s Department for Digital, Culture, Media and Sports also support a range of initiatives tailored towards companies with high-growth potential, such as the NCSC Cyber Accelerator, the London Office for Rapid Cybersecurity Advancement (LORCA)."
       ],
       [
-        "Key Comparisons: The Republic of Ireland is home to nearly 5 times as many cyber security firms as Northern Ireland and has more firms per capita. GVA per employee is also higher in Ireland at €150k, compared to NI’s €82k, and the average salary is c.€75k in comparison to NI’s c. €55k. The sector in both regions is shaped heavily by foreign direct investment as 70% of employment in Ireland is FDI supported, compared to 79% in Northern Ireland."
+        "Ireland should support the development of its domestic R\\&D and business support services, allocating greater public spend to the development of cyber security capabilities."
       ],
       [
-        "Key Strength: Northern Ireland is the home of the well-respected UK wide innovation and knowledge centre for cyber security CSIT, affiliated with Queens University Belfast and the UK National Cyber Security Centre. Note the activity at CSIT – basic research, applied research, post-grad, PhDs, supporting start-ups & innovation."
+        "Key Comparisons:",
+        "The Republic of Ireland is home to nearly 5 times as many cyber security firms as Northern Ireland and has more firms per capita. GVA per employee is also higher in Ireland at €150k, compared to NI’s €82k, and the average salary is c.€75k in comparison to NI’s c. €55k. The sector in both regions is shaped heavily by foreign direct investment as 70% of employment in Ireland is FDI supported, compared to 79% in Northern Ireland."
       ],
       [
-        "Northern Ireland",
-        "Key Comparisons: There are an estimated 3,500 cyber security firms in the US, compared to the 491 in Ireland."
+        "Key Strength:",
+        "Northern Ireland is the home of the well-respected UK wide innovation and knowledge centre for cyber security CSIT, affiliated with Queens University Belfast and the UK National Cyber Security Centre. Note the activity at CSIT – basic research, applied research, post-grad, PhDs, supporting start-ups & innovation."
+      ],
+      [
+        "Northern Ireland has set a goal to become one of the leading cyber security economies globally, recognising and building on NI’s “blend of world-class talent, leading forensic science expertise and tech research excellence”, to achieve 5,000 cyber security job roles by 2030."
       ],
       [
         "United States",
         "Key Cluster Regions: Virginia, Texas, Nevada"
       ],
       [
-        "Key Strength: The US market is of key significance to the Irish economy, and more than half of all employment within Ireland’s sector is supported by firms from the United States. This supports best practice adoption and skill transfer from the US to firms based in Ireland."
+        "Key Comparisons:",
+        "There are an estimated 3,500 cyber security firms in the US, compared to the 491 in Ireland."
+      ],
+      [
+        "Key Strength:",
+        "The US market is of key significance to the Irish economy, and more than half of all employment within Ireland’s sector is supported by firms from the United States. This supports best practice adoption and skill transfer from the US to firms based in Ireland."
       ],
       [
         "United Kingdom (including Northern Ireland)",
         "Key Cluster Regions: Cheltenham, Bristol, London, Manchester"
       ],
       [
-        "Key Comparisons: There are over three times as many firms providing cyber security products and services in the UK than in the Republic of Ireland; however, Ireland performs strongly on a per capita basis. On average, advertised cyber security salaries in Ireland appear slightly higher (c.€75k), compared to the UK average of £60k/€70k. In Ireland, GVA per employee also appears higher at €150k, compared to £100k/€120k in the UK."
+        "Key Comparisons:",
+        "There are over three times as many firms providing cyber security products and services in the UK than in the Republic of Ireland; however, Ireland performs strongly on a per capita basis. On average, advertised cyber security salaries in Ireland appear slightly higher (c.€75k), compared to the UK average of £60k/€70k. In Ireland, GVA per employee also appears higher at €150k, compared to £100k/€120k in the UK."
       ],
       [
-        "Key Strength: The UK’s National Cyber Security Strategy outlines how the government aims to develop a ‘programme of initiatives to give start-ups the support they need to get their first customers and attract further investment’, comparative to Ireland, investing c.10 times more on cyber security per capita."
+        "Key Strength:",
+        "The UK’s National Cyber Security Strategy outlines how the government aims to develop a ‘programme of initiatives to give start-ups the support they need to get their first customers and attract further investment’, comparative to Ireland, investing c.10 times more on cyber security per capita."
       ]
     ]
   },
@@ -699,27 +708,15 @@
         "CORK"
       ],
       [
+        "DUBLIN (ONSITE)",
         "DUBLIN (ONSITE)"
       ],
       [
-        "DUBLIN (ONSITE)"
-      ],
-      [
-        "CORK (ONSITE)"
-      ],
-      [
+        "CORK (ONSITE)",
         "LIMERICK (ONSITE)"
       ],
       [
-        "LIMERICK (ONSITE)"
-      ],
-      [
-        "GALWAY (ONSITE)"
-      ],
-      [
-        "GALWAY (ONSITE)"
-      ],
-      [
+        "GALWAY (ONSITE)",
         "IRELAND"
       ]
     ]
@@ -728,24 +725,21 @@
     "page": 24,
     "title": "FIGURE 5.2 JOB POST EXPERIENCE LEVEL",
     "headers": [
-      "INTERN / ENTRY-LEVEL",
-      "ASSOCIATE",
-      "MIDDLE TO SENIOR LEVEL"
+      "Experience Level",
+      "% of Job Posts"
     ],
     "rows": [
       [
-        "40%",
-        "42.4%",
-        "36.8%",
-        "87%"
-      ],
-      [
-        "20%",
-        "20.8%"
-      ],
-      [
-        "0%",
+        "INTERN / ENTRY-LEVEL",
         "13%"
+      ],
+      [
+        "ASSOCIATE",
+        "36.8%"
+      ],
+      [
+        "MIDDLE TO SENIOR LEVEL",
+        "42.4%"
       ]
     ]
   },
@@ -753,7 +747,7 @@
     "page": 27,
     "title": "This section provides an overview of the projected growth within Іreland’s cyber security sector alongside the key market opportunities and challenges that exist within the sector that can impact a sustainable growth rate.",
     "headers": [
-      "YEAR",
+      "Year",
       "GVA",
       "EMPLOYMENT"
     ],
@@ -883,31 +877,27 @@
     "title": "FIGURE 7.1 NUMBER OF PUBLICLY PROCURED TENDERS",
     "headers": [
       "Year",
-      "Number of Tenders",
-      "Total Value"
+      "Number of Tenders"
     ],
     "rows": [
       [
-        "Count",
-        "Value (£)"
+        "Value (£)",
+        "Number"
       ],
       [
         "2012",
-        "1",
         "£46M",
-        "£46M"
+        "1"
       ],
       [
         "2013",
-        "4",
         "£51M",
-        "£51M"
+        "4"
       ],
       [
         "2014",
-        "5",
         "£46M",
-        "£46M"
+        "5"
       ],
       [
         "2015",
@@ -936,6 +926,36 @@
       [
         "2021",
         "50"
+      ]
+    ]
+  },
+  {
+    "page": 31,
+    "title": "Cyber Іreland’s business survey assesses to which extent firms are engaging with wider networks. Overall:",
+    "headers": [
+      "56%",
+      "of firms engaged with a cyber security cluster;"
+    ],
+    "rows": [
+      [
+        "51%",
+        "engaged with a university, Іnstitute of Technology, or other higher education provider;"
+      ],
+      [
+        "44%",
+        "engaged with a public organisation that offered economic development support (e.g., Enterprise Іreland, local council);"
+      ],
+      [
+        "35%",
+        "engaged with other cyber security businesses;"
+      ],
+      [
+        "33%",
+        "engaged at meetup events; and"
+      ],
+      [
+        "20%",
+        "engaged with other public sector bodies."
       ]
     ]
   }
