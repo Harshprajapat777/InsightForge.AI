@@ -22,14 +22,16 @@ nest_asyncio.apply()
 APP_DIR = Path(__file__).parent / "InsightForge.AI"
 sys.path.insert(0, str(APP_DIR))
 
+import os
 import uvicorn
 from backend.main import app  # noqa: E402 — must come after sys.path insert
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8001))
     uvicorn.run(
         app,
         host="0.0.0.0",
-        port=8001,
+        port=port,
         reload=False,       # reload=True breaks with dynamic sys.path
         log_level="info",
     )

@@ -541,5 +541,37 @@
         "observation": "CAGR Result:\n  Formula     : ((end / start) ^ (1 / years) - 1) * 100\n  start_value : 8,086\n  end_value   : 17,333\n  years       : 8\n  CAGR        : 10.0000% per year\n  Rounded     : 10.00%\n  Meaning     : Growing from 8,086 to 17,333 over 8 years requires 10.00% annual compound growth."
       }
     ]
+  },
+  {
+    "timestamp": "2026-03-10T14:30:07.613231+00:00",
+    "query": "Based on our 2022 baseline and the stated 2030 job target, what is the required compound annual growth rate (CAGR) to hit that goal?",
+    "answer": "The required compound annual growth rate (CAGR) to grow from the 2022 baseline of 8,086 jobs to the 2030 target of 17,333 jobs is 10.00% per year. Source: Page 27 — \"2022: 8,086 (projection)... 2030: 17,333\".",
+    "citations": [
+      "Page 27"
+    ],
+    "tools_used": [
+      "rag_search_tool",
+      "math_calculator_tool"
+    ],
+    "agent_steps": [
+      {
+        "thought": "",
+        "action": "rag_search_tool",
+        "action_input": "",
+        "observation": "[Result 1] Page 24 (relevance: 0.328)\nSource : Cyber Ireland 2022 Report - Page 24\nText   : # FIGURE 5.2 JOB POST EXPERIENCE LEVEL\n\n| Experience Level       | % of Job Posts |\n| ---------------------- | -------------- |\n| INTERN / ENTRY-LEVEL   | 13%            |\n| ASSOCIATE              | 36.8%          |\n| MIDDLE TO SENIOR LEVEL | 42.4%          |\n\nAssuming comparable growth (+10% compound annual growth from the current baseline), the Irish cyber security sector could scale to the region of 15,000+ cyber security professionals by 2030. Therefore, thousands of individuals will need to be trai"
+      },
+      {
+        "thought": "",
+        "action": "math_calculator_tool",
+        "action_input": "",
+        "observation": "ERROR: Missing field 'years'. Required: start_value, end_value, years"
+      },
+      {
+        "thought": "",
+        "action": "math_calculator_tool",
+        "action_input": "",
+        "observation": "CAGR Result:\n  Formula     : ((end / start) ^ (1 / years) - 1) * 100\n  start_value : 8,086\n  end_value   : 17,333\n  years       : 8\n  CAGR        : 10.0000% per year\n  Rounded     : 10.00%\n  Meaning     : Growing from 8,086 to 17,333 over 8 years requires 10.00% annual compound growth."
+      }
+    ]
   }
 ]
