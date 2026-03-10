@@ -33,6 +33,7 @@ if __name__ == "__main__":
         app,
         host="0.0.0.0",
         port=port,
+        loop="asyncio",     # force stdlib asyncio — uvloop conflicts with nest_asyncio
         reload=False,       # reload=True breaks with dynamic sys.path
         log_level="info",
     )
