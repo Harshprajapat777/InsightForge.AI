@@ -9,13 +9,14 @@ This script adds the app directory to sys.path and launches uvicorn directly.
 """
 
 import sys
+import asyncio
 import nest_asyncio
 from pathlib import Path
 
 # Must apply BEFORE uvicorn/FastAPI start.
-# LlamaIndex embedding calls use asyncio.run() internally which conflicts
-# with FastAPI's running event loop when invoked via asyncio.to_thread.
-# nest_asyncio allows nested event loops — fixes "Reached max iterations" on UI.
+# On Linux with uvloop, there is no default event loop in the main thread —
+# explicitly create one before nest_asyncio.apply() to avoid RuntimeError.
+asyncio.set_event_loop(asyncio.new_event_loop())
 nest_asyncio.apply()
 
 # Add InsightForge.AI/ to path so 'backend.main' resolves correctly
