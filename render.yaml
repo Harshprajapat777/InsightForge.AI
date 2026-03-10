@@ -2,11 +2,12 @@ services:
   - type: web
     name: insightforge-ai
     runtime: python
+    pythonVersion: "3.11.9"
     buildCommand: pip install -r Requirements.txt
     startCommand: python run.py
+    autoDeploy: true
     envVars:
       - key: OPENAI_API_KEY
         sync: false
       - key: LLAMA_CLOUD_API_KEY
         sync: false
-    autoDeploy: true
